@@ -1,0 +1,8 @@
+org\acme\controllers\GreetingResource.class
+org\acme\models\ItemPDFModel.class
+org\acme\utils\ResourceUtils.class
+org\acme\enumerations\HTMLMarkerEnum.class
+org\acme\controllers\AttachmentResource.class
+org\acme\utils\StringUtils.class
+org\acme\services\AttachmentService.class
+org\acme\utils\PDFUtils.class

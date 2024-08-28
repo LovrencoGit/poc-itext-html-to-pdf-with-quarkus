@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @page {
+          size: A4 landscape;
+        }
+
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <div>{{LOGO}}</div>
+
+    <div>Ricevuta di acquisto</div>
+
+    <hr/>
+
+    <div>N° calloff: {{NUMERO_CALLOFF}}</div>
+    <div>Data di richiamo merci: {{DATA_RICHIAMO_MERCI}}</div>
+    <div>Produttori: {{PRODUTTORI}}</div>
+    <div>Indirizzo di spedizione: {{INDIRIZZO_SPEDIZIONE}}</div>
+</div>
+
+<hr/>
+
+<div class="content" style="color:blue;">
+    <div>Prodotti Acquistati</div>
+
+    <table class="table">
+        <tr>
+            <th>Nome</th>
+            <th>Prezzo</th>
+        </tr>
+        {{for:DettaglioRichiamoMerci_table_tr.html}}
+    </table>
+
+</div>
+
+<hr/>
+
+{{import:DettaglioRichiamoMerci_footer.html}}
+
+</body>
+</html>

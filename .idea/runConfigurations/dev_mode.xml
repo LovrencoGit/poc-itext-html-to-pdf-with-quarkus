@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="dev mode" type="QuarkusRunConfiguration" factoryName="QuarkusRunConfiguration">
+    <module name="poc-itext-html-to-pdf-with-quarkus" />
+    <option name="profile" />
+    <method v="2" />
+  </configuration>
+</component>
